@@ -3,11 +3,17 @@
 Table of Contents
 --------------------------
 Step #1 Install Metamask
+
 Step #2 Acquire Testnet ETH for Rinkeby
+
 Step #3 Add deployed tokens to Metamask
+
 Step #4 Mint an Estate
+
 Step #5 Use your Estate to mint TRs
+
 Step #6 Use your TRs and some Testnet ETH to mint some XTokens
+
 Step #7 Join us on discord!
 
 
