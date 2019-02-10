@@ -42,7 +42,7 @@ Step #3 Add deployed tokens to Metamask
 ------------------------
 All of our tokens are deployed on Rinkeby
 
-Estates are deployed at 0x39cac5c49fbc5ab963bbad547e605ff7fed2ee1e
+Estates are deployed at 0x9a2f3f96d9171f556d12de4f487b77ffadfd96b5
 
 TRs are deployed at 0x0a97190ea26f7e87566a972f8f0f6632274eb1b2
 
