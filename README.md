@@ -65,21 +65,27 @@ Step #4 Acquire an Estate
 Go to [AVIV Interact!](https://aviv-official.github.io/aviv-interact/index.html)
 
 ![Press "Connect to Wallet" button](./images/step.4.1.png)
+*Press "Connect to Wallet" button*
 
 This first time you connect, you will be prompted by MetaMask if you want the page to connect to your wallet, go ahead and accept.
 
 ![Expand the "Balances" line](./images/step.4.2.png)
+*Expand the "Balances" line*
 
 ![Expand the "Estates" line](./images/step.4.3.png)
+*Expand the "Estates" line*
 
 ![Input the quantity you wish to purchase, then press the "Purchase" button](./images/step.4.4.png)
+*Input the quantity you wish to purchase, then press the "Purchase" button*
 
 ![Confirm with MetaMask](./images/step.4.5.png)
+*Confirm with MetaMask*
 
-
-From here it is a matter of waiting, it can take up to 30 minutes to acquire your Estate depending on how congested the network is.  There is not much visual feedback, but the balance will eventually update to reflect your purchase.
+From here it is a matter of waiting, it can take up to 30 minutes to acquire your Estate depending on how congested the network is.  There is not much visual feedback, but ...
 
 ![](./images/step.4.6.png)
+*the balance will eventually update to reflect your purchase*
+
 
 ------------------------
 Step #5 Use your Estate to mint TRs
