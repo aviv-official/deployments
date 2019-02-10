@@ -72,7 +72,7 @@ This first time you connect, you will be prompted by MetaMask if you want the pa
 
 ![Expand the "Estates" line](./images/step.4.3.png)
 
-![Input the quantity you wish to purchase, then press the "Purchase" button](./images.step.4.4.png)
+![Input the quantity you wish to purchase, then press the "Purchase" button](./images/step.4.4.png)
 
 ![Confirm with MetaMask](./images/step.4.5.png)
 
