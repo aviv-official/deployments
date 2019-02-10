@@ -117,6 +117,7 @@ Estates can be used to mint Treasury Rights (TRs) once every 90 days.  The first
 *Acknowledge the rules*
 
 ![Confirm with MetaMask](./images/step.5.6.png)
+
 *Confirm with MetaMask*
 
 ![Your balance will eventually auto update](./images/step.5.7.png)
