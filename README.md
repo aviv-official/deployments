@@ -97,5 +97,5 @@ Coming soon!
 Step #7 Join us on discord!
 -------------------------
 
-Coming soon!
+[Here is the invite or discord!](https://discord.gg/RJF6mBm)
 
