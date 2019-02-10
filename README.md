@@ -91,7 +91,36 @@ From here it is a matter of waiting, it can take up to 30 minutes to acquire you
 Step #5 Use your Estate to mint TRs
 ------------------------
 
-Coming soon!
+Go to [AVIV Interact!](https://aviv-official.github.io/aviv-interact/index.html)
+
+![Press "Connect to Wallet" button](./images/step.4.1.png)
+*Press "Connect to Wallet" button*
+
+This first time you connect, you will be prompted by MetaMask if you want the page to connect to your wallet, go ahead and accept.
+
+![Expand the "Balances" line](./images/step.4.2.png)
+*Expand the "Balances" line*
+
+![Expand the TR line](./images/step.5.3.png)
+*Expand the TR line*
+
+Here you will see a list of links showing all the Estates you own as well as one or more buttons corresponding to Estates which are available and ready to use to mint Treasury Rights.  
+
+Estates can be used to mint Treasury Rights (TRs) once every 90 days.  The first time an estate is used, you can mint 42 TRs.  After that, each Estate is only valid for a single TR once every 90 days.  However these do roll over, thus at 180 days you can mint 2, at 360 days you can mint 4 etc.
+
+*Remember it can take up to 30 minutes for the blockchain to acknowledge you*
+
+![Press the button corresponding to the Estate you wish to use](./images/step.5.4.png)
+*Press the button corresponding to the Estate you wish to use for minting TRs*
+
+![Acknowledge the rules](./images/step.5.5.png)
+*Acknowledge the rules*
+
+![Confirm with MetaMask](./images/step.5.6.png)
+*Confirm with MetaMask*
+
+![Your balance will eventually auto update](./images/step.5.7.png)
+*Your balance will eventually auto update*
 
 ------------------------
 Step #6 Use your TRs and some Testnet ETH to mint some XTokens
@@ -103,5 +132,5 @@ Coming soon!
 Step #7 Join us on discord!
 -------------------------
 
-[Here is the invite or discord!](https://discord.gg/RJF6mBm)
+[Here is the invite for discord!  Come join the fun!](https://discord.gg/RJF6mBm)
 
