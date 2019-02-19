@@ -127,6 +127,20 @@
 	},
 	{
 		"constant": false,
+		"inputs": [],
+		"name": "processWithdrawals",
+		"outputs": [
+			{
+				"name": "remaining",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
 		"inputs": [
 			{
 				"name": "addr",
@@ -134,6 +148,48 @@
 			}
 		],
 		"name": "addManager",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ar",
+				"type": "address"
+			}
+		],
+		"name": "setAR",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "estate",
+				"type": "address"
+			}
+		],
+		"name": "setEstate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "addMint",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -180,6 +236,34 @@
 		"constant": false,
 		"inputs": [
 			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "onAgencyRemoved",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "burn",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
 				"name": "_elf",
 				"type": "address"
 			}
@@ -191,22 +275,17 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
-				"name": "tokenId",
-				"type": "uint256"
+				"name": "tr",
+				"type": "address"
 			}
 		],
-		"name": "canMint",
-		"outputs": [
-			{
-				"name": "avail",
-				"type": "uint256"
-			}
-		],
+		"name": "setTR",
+		"outputs": [],
 		"payable": false,
-		"stateMutability": "view",
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -232,15 +311,11 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "account",
-				"type": "address"
-			},
-			{
-				"name": "amount",
+				"name": "rate",
 				"type": "uint256"
 			}
 		],
-		"name": "burnFrom",
+		"name": "setManaRate",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -264,17 +339,12 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "tokenId",
+				"name": "amount",
 				"type": "uint256"
 			}
 		],
 		"name": "mint",
-		"outputs": [
-			{
-				"name": "minted",
-				"type": "uint256"
-			}
-		],
+		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -380,6 +450,65 @@
 		"constant": false,
 		"inputs": [
 			{
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"name": "dest",
+				"type": "address"
+			},
+			{
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_to",
+				"type": "address"
+			}
+		],
+		"name": "depositTo",
+		"outputs": [
+			{
+				"name": "tokens",
+				"type": "uint256"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "awardMana",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
 				"name": "dest",
 				"type": "address"
 			}
@@ -447,6 +576,34 @@
 	},
 	{
 		"constant": false,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "onAgencyAdded",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "removeMint",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
 		"inputs": [],
 		"name": "lock",
 		"outputs": [],
@@ -472,6 +629,11 @@
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
 	},
 	{
 		"anonymous": false,
@@ -515,6 +677,69 @@
 			}
 		],
 		"name": "Approval",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "mint",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "state",
+				"type": "bool"
+			}
+		],
+		"name": "MintChange",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "ManaRateChange",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Award",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "source",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposit",
 		"type": "event"
 	},
 	{

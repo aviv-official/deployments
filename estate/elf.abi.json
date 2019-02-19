@@ -1,42 +1,5 @@
 [
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "name",
-		"outputs": [
-			{
-				"name": "",
-				"type": "string"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "spender",
-				"type": "address"
-			},
-			{
-				"name": "value",
-				"type": "uint256"
-			}
-		],
-		"name": "approve",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"constant": false,
 		"inputs": [
 			{
@@ -66,6 +29,20 @@
 		"constant": false,
 		"inputs": [
 			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "forgive",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
 				"name": "token",
 				"type": "address"
 			},
@@ -80,47 +57,6 @@
 		],
 		"name": "sweepERC20",
 		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "totalSupply",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "from",
-				"type": "address"
-			},
-			{
-				"name": "to",
-				"type": "address"
-			},
-			{
-				"name": "value",
-				"type": "uint256"
-			}
-		],
-		"name": "transferFrom",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -141,87 +77,17 @@
 	},
 	{
 		"constant": true,
-		"inputs": [],
-		"name": "decimals",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint8"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "spender",
-				"type": "address"
-			},
-			{
-				"name": "addedValue",
-				"type": "uint256"
-			}
-		],
-		"name": "increaseAllowance",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_elf",
-				"type": "address"
-			}
-		],
-		"name": "setELF",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
 		"inputs": [
 			{
 				"name": "tokenId",
 				"type": "uint256"
 			}
 		],
-		"name": "canMint",
+		"name": "getAgent",
 		"outputs": [
 			{
-				"name": "avail",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "owner",
+				"name": "agent",
 				"type": "address"
-			}
-		],
-		"name": "balanceOf",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -232,28 +98,74 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "account",
+				"name": "_estate",
+				"type": "address"
+			}
+		],
+		"name": "setEstate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "addMint",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"name": "requested",
+				"type": "uint256"
+			},
+			{
+				"name": "dest",
 				"type": "address"
 			},
+			{
+				"name": "who",
+				"type": "address"
+			}
+		],
+		"name": "debit",
+		"outputs": [
 			{
 				"name": "amount",
 				"type": "uint256"
 			}
 		],
-		"name": "burnFrom",
-		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
 		"constant": true,
-		"inputs": [],
-		"name": "symbol",
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "tokenBalance",
 		"outputs": [
 			{
 				"name": "",
-				"type": "string"
+				"type": "int256"
 			}
 		],
 		"payable": false,
@@ -266,15 +178,14 @@
 			{
 				"name": "tokenId",
 				"type": "uint256"
-			}
-		],
-		"name": "mint",
-		"outputs": [
+			},
 			{
-				"name": "minted",
-				"type": "uint256"
+				"name": "amount",
+				"type": "int256"
 			}
 		],
+		"name": "setBalance",
+		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -283,21 +194,62 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "spender",
-				"type": "address"
+				"name": "p",
+				"type": "uint256"
 			},
 			{
-				"name": "subtractedValue",
+				"name": "q",
 				"type": "uint256"
 			}
 		],
-		"name": "decreaseAllowance",
-		"outputs": [
+		"name": "setFee",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
 			{
-				"name": "",
-				"type": "bool"
+				"name": "_tr",
+				"type": "address"
 			}
 		],
+		"name": "setTR",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "credit",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"name": "agent",
+				"type": "address"
+			}
+		],
+		"name": "setAgent",
+		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -343,29 +295,6 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "to",
-				"type": "address"
-			},
-			{
-				"name": "value",
-				"type": "uint256"
-			}
-		],
-		"name": "transfer",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
 				"name": "addr",
 				"type": "address"
 			}
@@ -374,6 +303,25 @@
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "getCreditLimit",
+		"outputs": [
+			{
+				"name": "limit",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -409,6 +357,20 @@
 		"type": "function"
 	},
 	{
+		"constant": true,
+		"inputs": [],
+		"name": "getFee",
+		"outputs": [
+			{
+				"name": "fee",
+				"type": "uint256[2]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"constant": false,
 		"inputs": [
 			{
@@ -426,23 +388,33 @@
 		"constant": true,
 		"inputs": [
 			{
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"name": "spender",
+				"name": "addr",
 				"type": "address"
 			}
 		],
-		"name": "allowance",
+		"name": "isMint",
 		"outputs": [
 			{
 				"name": "",
-				"type": "uint256"
+				"type": "bool"
 			}
 		],
 		"payable": false,
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "removeMint",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -455,18 +427,24 @@
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
-				"name": "name",
-				"type": "string"
-			},
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "surrender",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
 			{
-				"name": "symbol",
-				"type": "string"
-			},
-			{
-				"name": "decimals",
-				"type": "uint8"
+				"name": "_estate",
+				"type": "address"
 			}
 		],
 		"payable": false,
@@ -474,25 +452,25 @@
 		"type": "constructor"
 	},
 	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
 		"anonymous": false,
 		"inputs": [
 			{
 				"indexed": true,
-				"name": "from",
-				"type": "address"
+				"name": "tokenId",
+				"type": "uint256"
 			},
 			{
 				"indexed": true,
-				"name": "to",
+				"name": "agent",
 				"type": "address"
-			},
-			{
-				"indexed": false,
-				"name": "value",
-				"type": "uint256"
 			}
 		],
-		"name": "Transfer",
+		"name": "AgentSet",
 		"type": "event"
 	},
 	{
@@ -500,21 +478,89 @@
 		"inputs": [
 			{
 				"indexed": true,
-				"name": "owner",
+				"name": "mint",
+				"type": "address"
+			}
+		],
+		"name": "MintAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "mint",
+				"type": "address"
+			}
+		],
+		"name": "MintRemoved",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "source",
 				"type": "address"
 			},
 			{
 				"indexed": true,
-				"name": "spender",
-				"type": "address"
+				"name": "amount",
+				"type": "uint256"
 			},
 			{
 				"indexed": false,
-				"name": "value",
+				"name": "balance",
+				"type": "int256"
+			}
+		],
+		"name": "DepositReceived",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "dest",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "fee",
 				"type": "uint256"
 			}
 		],
-		"name": "Approval",
+		"name": "LoanCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "tokenId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "owed",
+				"type": "uint256"
+			}
+		],
+		"name": "LoanDefaulted",
 		"type": "event"
 	},
 	{
