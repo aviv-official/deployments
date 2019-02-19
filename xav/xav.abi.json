@@ -264,7 +264,7 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "_elf",
+				"name": "__elf",
 				"type": "address"
 			}
 		],
